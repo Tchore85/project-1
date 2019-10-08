@@ -196,7 +196,9 @@ input[type=email], input[type=submit] {
 
 .About h3 {
   width: auto;
-
+  color: #e2576c;
+  font-family: Raleway Web,sans-serif;
+  text-transform: uppercase;
 }
 .container-small {
   /* max-width: 740px; */
