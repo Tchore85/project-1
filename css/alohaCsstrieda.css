@@ -54,7 +54,7 @@ h1{
   font-size: 16px;
   text-align: center;
   /* width: 700px; */
-  margin-left: auto;
+  margin-left: auto;  
   margin-right: auto;
   display: block;
    margin: 26px;
@@ -133,14 +133,14 @@ input[type=email], input[type=submit] {
     display: flex;
     flex-flow: column;
     max-width: 1240px; 
-    height: 34vh;
+    height: auto;
     /* background-color:grey; remove later  */
     margin: 0 auto;   /*to center the element */
      justify-content: center; 
      align-items:  center;
-     
+ }
   
-} 
+ 
 
 .Logo{
 
@@ -303,8 +303,13 @@ height: 50vw;
 .after-product {
 
 height: 80%;
+}
+.dress{
+text-align: justify
 
 }
+
+
 /* teacher added */
 .after-product img { 
 max-width: 100%;
@@ -326,11 +331,16 @@ max-width: 100%;
 
 .fotter-socialmedia i {
   
-  width: 30px;    
+  width: 30px;   
+
   /* height: 25vh;  */
+
 } 
+.network-name{
 
+display:none;
 
+}
 .flex-container {
 
 /* display: flex;     */
@@ -344,10 +354,20 @@ justify-content: space-between;
 
 }
 
+.submit{
+  background: #e2576c;  /*profesor*/
+  position: relative;   /*profesor*/
+  left: 163px;            /*profesor*/
 
 
+}
+.post{
+
+  display: flex;   /*profesor*/
+}
 .email {
-
+  justify-content: center;    /*profesor*/
+  text-align: center;       /*profesor*/
   display: flex; 
   /* height: 70vh; */
   padding: 92px 0px;
@@ -356,6 +376,14 @@ justify-content: space-between;
   background-image: url(../images/wave-bkgd.jpg);
   background-position: bottom;
 }
+.email-colum{
+
+padding-right: 200px;
+position: absolute;
+
+}
+
+
 
 .updates{
   /* margin: 0 auto;  */
@@ -437,15 +465,15 @@ margin-top: 2%;
 
   h3 {
  
-    color:orangered;
+    color:#e2576c;;
     font-size: 20px;
     text-align: center;
     /* width: 700px; */
-    margin-left: auto;
+    /* margin-left: auto; */
     margin-right: auto;
     display: block;
     margin-top: -36px;
-     
+    margin-left: 52px;
    }
 
 .card {
@@ -465,9 +493,26 @@ margin-top: 2%;
 
     display: flex;
 
-
-
   }
+
+  .navigation-panel{
+
+    display:flex;
+    align-content: center;
+      }
+      .color-email {
+
+        /* background-color: white; */
+        display: flex;
+        /* margin: auto 16%; */
+        justify-content: center;  /*profesor*/
+        margin: auto;    /*profesor*/
+       /* max-width:400px; */
+      }
+
+
+
+      
 }
 
 
