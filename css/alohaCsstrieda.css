@@ -1,0 +1,510 @@
+/* Extra resets */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+
+  font-family:'Releway';
+  /* font-family:'Playfair Dispoay'; */
+}
+/* Typografy */
+
+h1{
+  
+  font-family: 'Raleway';
+  font-style: italic;
+  color:white;
+  font-size: 50px;
+  text-align: center;
+  /* width: 700px; */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+ }
+
+
+ h2 {
+  font-family: Playfair Display Web,serif;
+  line-height: 1;
+  font-size: 2.4rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+
+ 
+  color:black;
+  /* font-size: 20px; */
+  text-align: center; 
+  /* width: 700px; */
+  margin-left: auto; 
+  margin-right: auto; 
+  /* display: block; */
+  /* font-weight: bold;  */
+  line-height: 80px; 
+ }
+
+
+ h3 {
+ 
+  color:orangered;
+  font-size: 16px;
+  text-align: center;
+  /* width: 700px; */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+   margin: 26px;
+ }
+
+
+ h4 {
+
+  color:white;
+
+  font-size: 20px;
+  text-align: center;
+  /* width: 700px; */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-weight: bold; 
+ }
+
+ p {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  /* width: 700px;  */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-style:italic;
+  margin-top: -20px;
+  /* font-weight: bold; */
+
+ }
+
+.fontemail p {
+
+color:white;
+font-size: 20px;
+}
+
+.fonteimail h2{
+color: white;
+
+}
+
+
+
+ .email{
+
+text-align:center;
+margin-left: auto;
+margin-right: auto;
+
+ }
+input[type=email], input[type=submit] {
+  border: 0;
+  border-radius: 25px;
+  font: 100 26px system-ui;
+
+ }
+
+ a {
+
+  color:white;
+  font-size: 2rem;
+  text-align: center;
+  /* width: 700px; */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* font-weight: bold;  */
+ }
+/* Common Layout Classes */
+
+
+ .container {
+    display: flex;
+    flex-flow: column;
+    max-width: 1240px; 
+    height: 34vh;
+    /* background-color:grey; remove later  */
+    margin: 0 auto;   /*to center the element */
+     justify-content: center; 
+     align-items:  center;
+     
+  
+} 
+
+.Logo{
+
+    display: flex;
+    /* height: 80%; */
+    /* width:100%; */
+    color: white;
+    line-height: 1.5;
+    justify-content: space-between; 
+    margin-top: 1%;
+}
+  .card{
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+   
+  }
+    
+    
+  .Logo img {
+    
+  width: 198px;
+  height: auto;
+    
+    
+    
+    width: 150px;
+    height: auto;
+
+  }
+
+  .card img {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+
+  }
+
+.Logo,
+.card {
+  flex-basis: 100px; 
+  display:flex;
+  
+ 
+}
+
+.About {
+  flex-grow: 1;
+  font-family: 'Courier New', Courier, monospace;
+  margin:auto;
+  flex-wrap: wrap;
+}
+
+.About h3 {
+  width: auto;
+
+}
+.container-small {
+  /* max-width: 740px; */
+  /* margin: 0 auto;   to center the element */
+  background-color:black; 
+  /* border:1px solid black; */
+  /* height: 200px; */
+  padding:50px;
+}
+
+
+/* Header area */
+
+header {
+  font-family: Helvetica, sans-serif;
+}
+
+/* banner area */
+    .banner  {
+    padding:200px 0px;
+    background-image: url(../images/banner-girl.png)   ,url(../images/flower-bkgd.jpg);
+
+
+background-repeat: no-repeat, repeat ;
+background-position: center center;
+background-size: contain;
+
+  } 
+/* after banner area*/
+
+.afterbanner{
+/* height: 20vh; */
+flex-wrap:wrap;
+padding:100px 50px;
+ 
+}
+
+
+.products-img {
+background-repeat:no-repeat;
+background-position: center;
+background-size: cover;
+display:flex;
+justify-content: center;
+align-items: center;
+border: 2px solid white;
+}
+
+.galery {
+  display: flex;
+  /* flex-flow: row wrap   */
+  flex-wrap:wrap; 
+ 
+}
+
+.men {
+width: 112%;
+height: 50vw;
+/* padding: 200px 0px; */
+background-image: url(../images/mens-category.jpg);
+
+}
+.hat {
+width: 112%;
+height: 50vw;
+/* padding:200px 0px; */
+background-image:url(../images/trends-category.jpg);
+
+}
+
+.glasses {
+  width: 112%;
+  height: 50vw;
+  /* padding:200px 0px; */
+  background-image:url(../images/glasses-category.jpg);
+
+}
+.sale {
+width:112%;
+height: 50vw;
+  /* padding:200px 0px; */
+  background-image:url(../images/sale-category.jpg);
+
+}
+.bags{
+width:112%;
+height: 50vw;
+  /* padding:200px 0px; */
+  background-image:url(../images/bags-category.jpg);
+
+}
+.womens{
+  width:112%;
+  height: 50vw;
+  /* padding:200px 0px; */
+  background-image:url(../images/womens-category.jpg);
+
+}
+
+/* After product area text*/
+
+.after-product {
+
+height: 80%;
+
+}
+/* teacher added */
+.after-product img { 
+max-width: 100%;
+  height: auto;
+}
+
+.fotter-socialmedia li{
+  /* width: 40px;    */
+  /* display: block; */
+
+  text-align: right;  
+  text-align:left;  
+  /* margin-left: 700px;  */
+  margin-right: auto; 
+  font-size: 20px; 
+}
+
+
+
+.fotter-socialmedia i {
+  
+  width: 30px;    
+  /* height: 25vh;  */
+} 
+
+
+.flex-container {
+
+/* display: flex;     */
+background-color: black; 
+height: 40%; 
+width:100%; 
+color: white; 
+line-height: 2;  
+justify-content: space-between; 
+
+
+}
+
+
+
+.email {
+
+  display: flex; 
+  /* height: 70vh; */
+  padding: 92px 0px;
+  background-size: cover;
+  justify-content: center;
+  background-image: url(../images/wave-bkgd.jpg);
+  background-position: bottom;
+}
+
+.updates{
+  /* margin: 0 auto;  */
+  max-width: 1240px;
+ 
+ 
+}
+
+@media screen and (min-width: 600px) {
+  .galery {
+    display: flex;
+    flex-wrap:wrap; 
+
+  }
+
+.men {
+  width: 50%;
+  height: 25vw;
+  /* padding: 200px 0px; */
+  
+  }
+  .hat {
+  width: 25%;
+  height: 25vw;
+  /* padding:200px 0px; */
+  
+  
+  }
+  
+  .glasses {
+    width: 25%;
+    height: 25vw;
+    /* padding:200px 0px; */
+    
+  
+  }
+  .sale {
+  width:25%;
+  height: 25vw;
+    /* padding:200px 0px; */
+    
+  
+  }
+  .bags{
+  width:25%;
+  height: 25vw;
+    /* padding:200px 0px; */
+ 
+  
+  }
+  .womens{
+    width:50%;
+    height: 25vw;
+    /* padding:200px 0px; */
+    
+  }
+
+.Logo{
+
+  width: 100%;
+margin-top: 2%;
+}
+.Logo img{
+
+  width: 150px;
+  height: auto;
+
+}
+
+.container {
+  display: flex;
+  max-width: 1240px; 
+  height: 15vh;
+  /* background-color:grey; remove later  */
+  margin: 0 auto;   /*to center the element */
+  /* .fas { */
+
+  }
+
+  h3 {
+ 
+    color:orangered;
+    font-size: 20px;
+    text-align: center;
+    /* width: 700px; */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -36px;
+     
+   }
+
+.card {
+
+  margin-top: -5%;
+  margin-bottom: 1%;
+  margin-left: 700px;
+}
+  .card img {
+    width: 69px;
+    height: auto;
+    margin-left: 260px;
+    display: flex;
+    
+  }
+  .flex-container {
+
+    display: flex;
+
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* color: coral; */
+/* font-size: 32px */
+
+  
+
+/* .fas:hover { */
+
+/* color: skyblue; */
+
+
+
+/* .fab { */
+
+
+
+  /* background-repeat:no-repeat; */
+  /* background-position: center; */
+  /* background-size: auto; */
+  /* width: 100%; */
+  /* height: 80%; */
+  /* padding: 200px 0px;  */
+  
+
+

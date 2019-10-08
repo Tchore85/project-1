@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonttrieda/Raleway-Medium.eot');
+    src: url('../fonttrieda/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonttrieda/Raleway-Medium.woff2') format('woff2'),
+        url('../fonttrieda/Raleway-Medium.woff') format('woff'),
+        url('../fonttrieda/Raleway-Medium.ttf') format('truetype'),
+        url('../fonttrieda/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonttrieda/Raleway-MediumItalic.eot');
+    src: url('../fonttrieda/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonttrieda/Raleway-MediumItalic.woff2') format('woff2'),
+        url('../fonttrieda/Raleway-MediumItalic.woff') format('woff'),
+        url('../fonttrieda/Raleway-MediumItalic.ttf') format('truetype'),
+        url('../fonttrieda/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonttrieda/Raleway-LightItalic.eot');
+    src: url('../fonttrieda/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonttrieda/Raleway-LightItalic.woff2') format('woff2'),
+        url('../fonttrieda/Raleway-LightItalic.woff') format('woff'),
+        url('../fonttrieda/Raleway-LightItalic.ttf') format('truetype'),
+        url('../fonttrieda/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonttrieda/Raleway-Light.eot');
+    src: url('../fonttrieda/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonttrieda/Raleway-Light.woff2') format('woff2'),
+        url('../fonttrieda/Raleway-Light.woff') format('woff'),
+        url('../fonttrieda/Raleway-Light.ttf') format('truetype'),
+        url('../fonttrieda/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonttriedaPlayfairDisplay-Bold.eot');
+    src: url('../fonttriedaPlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonttriedaPlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../fonttriedaPlayfairDisplay-Bold.woff') format('woff'),
+        url('../fonttriedaPlayfairDisplay-Bold.ttf') format('truetype'),
+        url('../fonttriedaPlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonttriedaPlayfairDisplay-Italic.eot');
+    src: url('../fonttriedaPlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonttriedaPlayfairDisplay-Italic.woff2') format('woff2'),
+        url('../fonttriedaPlayfairDisplay-Italic.woff') format('woff'),
+        url('../fonttriedaPlayfairDisplay-Italic.ttf') format('truetype'),
+        url('../fonttriedaPlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonttriedaPlayfairDisplay-Regular.eot');
+    src: url('../fonttriedaPlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonttriedaPlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../fonttriedaPlayfairDisplay-Regular.woff') format('woff'),
+        url('../fonttriedaPlayfairDisplay-Regular.ttf') format('truetype'),
+        url('../fonttriedaPlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonttriedaPlayfairDisplay-BoldItalic.eot');
+    src: url('../fonttriedaPlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonttriedaPlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('../fonttriedaPlayfairDisplay-BoldItalic.woff') format('woff'),
+        url('../fonttriedaPlayfairDisplay-BoldItalic.ttf') format('truetype'),
+        url('../fonttriedaPlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
