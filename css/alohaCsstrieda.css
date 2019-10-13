@@ -5,7 +5,6 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-*,
 *:before,
 *:after {
   box-sizing: inherit;
@@ -23,26 +22,63 @@ body {
 
 /* THIS IS HEADER CONTAINER MOBILE */
 
-header {
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-}
 .header-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-content: space-between; */
+  max-width: 1240px;
+  height: auto;
+  /* margin: 0 auto; */
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
 }
+
 .Logo {
+  display: flex;
+  align-self: flex-start;
+  /* flex: 0 1 90%; */
+  padding-bottom: 2%;
+  order: -1;
+  width: 12rem;
 }
 
 .Logo img {
   width: 150px;
   height: auto;
 }
-.card img {
+.navigation-panel {
+  display: flex;
+  border-top: 1px solid #d7d7d7;
+}
+.nav {
+  font-size: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin: 26px;
+
+  width: 126px;
+  color: #e2576c;
+  font-family: Raleway Web, sans-serif;
+  text-transform: uppercase;
+  width: auto;
+  text-decoration-line: none;
+}
+
+.card-image {
   width: 70px;
   height: auto;
 }
 
 .card {
-  /* display: flex; */
+  order: -1;
+  display: flex;
+  padding-bottom: 1rem;
+  align-content: end;
+  width: 0%;
 }
 /* THIS IS SECTION BANNER */
 
@@ -70,22 +106,20 @@ h1 {
   display: block;
 }
 
+.afterbanner {
+  /* height: 20vh; */
+  flex-wrap: wrap;
+  padding: 100px 50px;
+}
+
 h2 {
   font-family: Playfair Display Web, serif;
   line-height: 1;
   font-size: 2.4rem;
   font-style: italic;
   margin-bottom: 1.5rem;
-
   color: black;
-  /* font-size: 20px; */
   text-align: center;
-  /* width: 700px; */
-  margin-left: auto;
-  margin-right: auto;
-  /* display: block; */
-  /* font-weight: bold;  */
-  line-height: 80px;
 }
 
 h3 {
@@ -108,25 +142,9 @@ p {
   margin-right: auto;
   display: block;
   font-style: italic;
-  margin-top: -20px;
+  line-height: 2;
+
   /* font-weight: bold; */
-}
-.nav {
-  color: orangered;
-  font-size: 16px;
-  text-align: center;
-  /* width: 700px; */
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin: 26px;
-
-  /* this is from about */
-
-  /* width: auto; */
-  /* color: #e2576c; */
-  /* font-family: Raleway Web, sans-serif; */
-  /* text-transform: uppercase; */
 }
 
 .fontemail p {
@@ -178,15 +196,6 @@ a {
 }
 .container-small {
   display: flex;
-  /* max-width: 740px; */
-  /* margin: 0 auto;   to center the element */
-
-  /* background-color: #242424;  this*/
-
-  /* border:1px solid black; */
-  /* height: 200px; */
-
-  /* padding: 50px; this*/
 }
 
 /* banner area */
@@ -199,13 +208,23 @@ a {
   background-position: center center;
   background-size: contain;
 }
-/* after banner area*/
-
-.afterbanner {
-  /* height: 20vh; */
-  flex-wrap: wrap;
-  padding: 100px 50px;
+.collection {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-family: Raleway Web, sans-serif;
+  font-style: normal;
 }
+
+.season {
+  font-family: Playfair Display Web, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: none;
+  color: white;
+  font-style: normal;
+}
+/* after banner area*/
 
 .products-img {
   background-repeat: no-repeat;
@@ -215,9 +234,9 @@ a {
   justify-content: center;
   align-items: center;
   border: 2px solid white;
-}
+  box-sizing: border-box;
 
-.galery {
+  /* .galery { */
   display: flex;
   /* flex-flow: row wrap   */
   flex-wrap: wrap;
@@ -342,12 +361,66 @@ a {
   /* margin: 0 auto;  */
   max-width: 1240px;
 }
-
+/* MEDIAQUARI FOR DESKTOP */
 @media screen and (min-width: 600px) {
+  .header-container {
+  }
+
+  .Logo {
+    max-width: 200px;
+    /* width: auto; */
+    display: flex;
+    /* height: 80%; */
+    /* width:100%; */
+    color: white;
+    line-height: 2.5;
+    /* justify-content: space-between; */
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .Logo img {
+    width: 198px;
+    height: auto;
+  }
+
+  .navigation-panel {
+    display: flex;
+    border-top: none;
+  }
+
+  .nav {
+    width: 126px;
+    color: #e2576c;
+    font-family: Raleway Web, sans-serif;
+    text-transform: uppercase;
+    /* width: auto; */
+    text-decoration-line: none;
+  }
+
+  .card {
+    display: flex;
+    order: 0;
+  }
+  .card-image {
+    width: 69px;
+    height: auto;
+    display: flex;
+  }
+
+  .season {
+    font-size: 4rem;
+  }
+
+  .afterbanner {
+    padding-top: 4%;
+    height: 18vh;
+  }
+
   /* THIS IS THE GALERRY */
   .galery {
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
   }
 
   .men {
@@ -382,77 +455,60 @@ a {
     /* padding:200px 0px; */
   }
 
-  .Logo {
-    width: 25%;
-    display: flex;
-    /* height: 80%; */
-    /* width:100%; */
-    color: white;
-    line-height: 1.5;
-    justify-content: space-between;
-    /* margin-top: 1%; */
+  .after-product {
+    padding-top: 2%;
   }
-  .Logo img {
-    width: 198px;
-    height: auto;
-  }
-
-  .header-container {
-    display: flex;
-    align-content: space-between;
-    max-width: 1240px;
-    height: 15vh;
-    margin: 0 auto;
-
-    justify-content: center;
-    align-items: center;
-  }
-
   h3 {
     color: #e2576c;
     font-size: 20px;
     text-align: center;
-    margin-right: auto;
+    /* margin-right: auto; */
     display: block;
-    margin-top: -36px;
-    margin-left: 52px;
+
+    font-size: 2.4rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    /* margin-top: -36px; */
+    /* margin-left: 52px; */
+  }
+  .item-tag {
+    font-family: Playfair Display Web, serif;
+    line-height: 1;
+    color: #e2576c;
+  }
+  .price {
+    color: #969696;
+    font-weight: 800;
   }
 
-  .card img {
-    width: 69px;
-    height: auto;
-
-    display: flex;
-  }
-  .flex-container {
-  }
-
-  .navigation-panel {
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    width: 50%;
-  }
   .color-email {
-    /* background-color: white; */
     display: flex;
-    /* margin: auto 16%; */
     justify-content: center; /*profesor*/
     margin: auto; /*profesor*/
     /* max-width:400px; */
   }
-  .nav {
-    width: 126px;
-    color: #e2576c;
-    font-family: Raleway Web, sans-serif;
-    text-transform: uppercase;
-    width: auto;
+  /* THIS IS EMAIL FOLDER */
+  .email-colum {
+    padding-right: 200px;
+    position: relative;
+    padding-right: 40px;
+    width: 418px;
+  }
+  .submit {
+    background: #e2576c; /*profesor*/
+    position: relative; /*profesor*/
+    left: -43px; /*profesor*/
   }
 
   /* media query example */
   @media screen and (min-width: 600px) {
     .carousel-cell {
-      width: 50%;
+      width: 25%;
+    }
+
+    .main-carousel {
+      margin-bottom: 100px;
+      padding-bottom: 75px;
     }
     .item-tag {
       font-family: Playfair Display Web, serif;
@@ -471,19 +527,10 @@ a {
       font-weight: 700;
     }
   }
-}
 
-/* FOOTTER AREA FOR DESKTOP */
-.container-small {
-  /* max-width: 740px; */
-  /* width: 100%; */
-  /* background-color: white; */
-  /* border: solid 1px; */
-}
-/* LINK TO THE FLICKITI */
-
-@media screen and (min-width: 1240px) {
-  carousel-cell {
-    width: 25%;
+  @media screen and (min-width: 1240px) {
+    carousel-cell {
+      width: 25%;
+    }
   }
 }

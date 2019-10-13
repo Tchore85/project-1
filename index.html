@@ -18,7 +18,7 @@
    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
    <!-- This is the flickity for Java -->
-   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>;
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
    <link rel="stylesheet" href="css/reset.css">
@@ -36,17 +36,19 @@
    <header class=" header-container container">
 
       <div class="Logo">
-         <img src="images\aloha-logo.svg " position="absolute" alt="Aloha">
+         <img src="images\aloha-logo.svg " alt="Aloha">
       </div>
       <!-- <div class="About"> -->
-      <ul class="navigation-panel">
-         <li><a class="nav" href="#about">About</a></li>
-         <li><a class="nav" href="#shop">Shop</a></li>
-         <li><a class="nav" href="#featured">Featured</a></li>
-         <li><a class="nav" href="#Updates">Updates</a></li>
-      </ul>
+      <div>
+         <ul class="navigation-panel">
+            <li><a class="nav" href="#about">About</a></li>
+            <li><a class="nav" href="#shop">Shop</a></li>
+            <li><a class="nav" href="#featured">Featured</a></li>
+            <li><a class="nav" href="#updates">Updates</a></li>
+         </ul>
+      </div>
       <div class="card">
-         <img class="card" src=" images\cart-icon.svg " alt="cart-icon">
+         <img class="card-image" src=" images\cart-icon.svg " alt="cart-icon">
       </div>
 
 
@@ -55,25 +57,29 @@
 
    <section class="banner">
 
-      <h4> NEW COLLECTION</h4> <br>
+      <p class="collection"> NEW COLLECTION</p>
 
-      <h1>Spring /Summer 2019</h1> <br>
+      <p class="season">Spring /Summer 2019</p>
 
    </section>
 
 
-   <section class="afterbanner">
+   <div id="about">
+      <section class="afterbanner">
 
-      <div id="about">
-         <h2>Hand Crafted- Styles</h2> <br>
+         <h2>Hand-Crafted Styles</h2>
 
-         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. <br>Browse our current
+
+
+
+         <p class="alohaapparel">Aloha Apparel Co. sells only the finest ready-to-travel clothing. <br>Browse our
+            current
             selection of products or sign-up for updates below.</p>
-      </div>
+   </div>
    </section>
+
+
    <div id="shop"></div>
-
-
 
    <section class="galery">
 
@@ -116,10 +122,8 @@
 
    <section class="after-product">
 
-      <h2>Most Love Products</h2>
+      <h2>Most-Loved Products</h2>
 
-
-      <!-- <div class="dress"> -->
 
       <div class="main-carousel">
 
@@ -151,7 +155,7 @@
             <img src="images/blue-hipster-backpack.jpg">
             <p class="Products-type">Bags</p>
             <h3 class=item-tags>Blue Hipster Backpack</h3>
-            <p class="price">$69></p>
+            <p class="price">$69</p>
 
          </div>
 
@@ -188,7 +192,7 @@
 
       </div>
 
-
+      <div id="updates"></div>
       <section class="email ">
 
          <div class="updates">
@@ -206,13 +210,12 @@
                </p>
 
             </div>
+
             <div class="color-email">
-               <br>
-               <!-- <input class="post" form method="post"> -->
-               <input class="email-colum" type="email" placeholder="Your email">
 
-               <input class="submit" type="submit" value=" Subsribe">
-
+               <form id="mainform" class="email-form" method="post">
+                  <input class="email-colum" type="email" placeholder="Your email" id="contact">
+                  <input class="submit" type="submit" value=" Subsribe" id="btn">
                </form>
             </div>
          </div>
@@ -236,12 +239,12 @@
 
                   604-604-6040. info@alohaapparel.com <br>
 
-                  <!-- <div class="adress"> -->
+
 
                   1490 W Broadway <br>
 
                   Vancouver, BC, Canada
-                  <!-- </div> -->
+
                </div>
 
                <div class="fotter-socialmedia">
@@ -268,8 +271,7 @@
                            <span class="network-name"></span>Pinterest</li>
 
       </section>
-      <!-- <i class="fas fa-bicycle"></i> -->
-      <!-- <i class="fab fa-accessible-icon"></i> -->
+
       </a>
 
       </ul>
