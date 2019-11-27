@@ -1,0 +1,36 @@
+{
+  "name": "aloha",
+  "version": "1.0.0",
+  "description": "my first wdp ",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tchore85/project-1.git"
+  },
+  "author": "Michal Prokop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tchore85/project-1/issues"
+  },
+  "homepage": "https://github.com/Tchore85/project-1#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^4.0.2",
+    "gulp-prettyerror": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-terser": "^1.1.5",
+    "streamqueue": "^1.1.2"
+  }
+}

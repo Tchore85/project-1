@@ -1,0 +1,609 @@
+/* Extra resets */
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.carousel-cell {
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  font-family: "Releway";
+}
+.container {
+  max-width: 1240px;
+  padding: 0 2%;
+  margin: 0 auto;
+  width: 100%;
+}
+.header-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+}
+
+.main-navigation {
+  align-self: center;
+}
+
+.Logo {
+  order: -1;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 1%;
+  margin: auto 0;
+}
+
+.Logo img {
+  width: 150px;
+  height: auto;
+}
+.navigation-panel {
+  display: flex;
+  border-top: 1px solid #d7d7d7;
+}
+.nav {
+  font-size: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin: 10px;
+  width: 126px;
+  color: #e2576c;
+  font-family: Raleway Web, sans-serif;
+  text-transform: uppercase;
+  width: auto;
+  text-decoration-line: none;
+}
+
+.card-image {
+  width: 70px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.card {
+  /* order: -1; */
+  display: flex;
+  padding-bottom: 1rem;
+  align-content: end;
+}
+
+h1 {
+  font-family: "Raleway";
+  font-style: italic;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+h2 {
+  font-family: "Playfair Display Web", serif;
+  line-height: 1;
+  font-size: 2.4rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  color: #e2576c;
+  font-size: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin: 26px;
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-weight: bold;
+}
+
+p {
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  line-height: 2;
+}
+
+a {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-decoration-line: none;
+}
+
+.banner {
+  padding: 200px 0px;
+  background-image: url(../../images/banner-girl.png),
+    url(../../images/flower-bkgd.jpg);
+
+  background-repeat: no-repeat, repeat;
+
+  background-position: center center;
+  background-size: contain;
+}
+
+.collection {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-family: Raleway Web, sans-serif;
+  font-style: normal;
+}
+
+.season {
+  font-family: Playfair Display Web, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: none;
+  color: white;
+  font-style: normal;
+}
+
+.alohaapparel {
+  font-size: 18px;
+}
+
+.products-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.men {
+  width: 112%;
+  height: 50vw;
+
+  background-image: url(../../images/mens-category.jpg);
+}
+.hat {
+  width: 112%;
+  height: 50vw;
+
+  background-image: url(../../images/trends-category.jpg);
+}
+
+.glasses {
+  width: 112%;
+  height: 50vw;
+
+  background-image: url(../../images/glasses-category.jpg);
+}
+.sale {
+  width: 112%;
+  height: 50vw;
+
+  background-image: url(../../images/sale-category.jpg);
+}
+.bags {
+  width: 112%;
+  height: 50vw;
+
+  background-image: url(../../images/bags-category.jpg);
+}
+.womens {
+  width: 112%;
+  height: 50vw;
+
+  background-image: url(../../images/womens-category.jpg);
+}
+
+.afterbanner {
+  flex-wrap: wrap;
+  padding: 100px 50px;
+}
+
+.Products-type {
+  color: #969696;
+  font-family: Raleway Web, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.price {
+  color: #969696;
+  font-weight: 800;
+}
+
+.stay-update {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+input[type="email"] {
+  padding: 0.5rem 1.75rem;
+  padding-right: 150px;
+  width: 100%;
+}
+
+input[type="email"],
+input[type="submit"] {
+  border: 0;
+  border-radius: 25px;
+  font: 100 20px system-ui;
+}
+#mainform {
+  display: flex;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  display: block;
+  margin: 2rem auto 0;
+  position: relative;
+  width: 67%;
+}
+
+input[type="email"] {
+  padding: 0.5rem 1.75rem;
+  padding-right: 150px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #e2574c;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Raleway Web", sans-serif;
+  font-weight: 300;
+  padding: 0.25rem 1.5rem;
+  position: absolute;
+  right: 0.25rem;
+  top: 0.25rem;
+}
+
+.after-product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-small {
+  display: flex;
+}
+.flex-container {
+  background-color: #242424;
+  height: auto;
+  width: 100%;
+  color: white;
+  line-height: 2;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.text-media {
+  position: absolute;
+}
+
+.network-name {
+  display: none;
+}
+.submit {
+  position: absolute;
+  color: white;
+  background-color: #e2574c;
+  font-family: Raleway Web, sans-serif;
+}
+
+.post {
+  display: flex; /*profesor*/
+}
+.email {
+  justify-content: center; /*profesor*/
+  text-align: center; /*profesor*/
+  display: flex;
+  padding: 92px 0px;
+  background-size: cover;
+  justify-content: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../../images/wave-bkgd.jpg) no-repeat bottom;
+
+  /* background-image: url(../../images/wave-bkgd.jpg); */
+  background-position: bottom;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 51px;
+}
+
+.email-colum {
+  position: relative;
+  width: 100%;
+  font-family: Raleway Web, sans-serif;
+}
+
+.updates {
+  max-width: 1240px;
+}
+.sign-up {
+  color: white;
+}
+
+.fotter-socialmedia li {
+  text-align: right;
+  text-align: left;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.fotter-socialmedia i {
+  width: 30px;
+}
+
+.social {
+  margin: 10px;
+  display: flex;
+}
+.facebook {
+  display: none;
+}
+
+.twitter {
+  display: none;
+}
+
+.instagram {
+  display: none;
+}
+.pinterest {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .main-navigation {
+    align-self: center;
+    flex: 1 0 auto;
+  }
+
+  .navigation-panel {
+    display: flex;
+    border-top: none;
+  }
+
+  .header-container {
+    margin: 0 auto;
+  }
+  .nav {
+    font-size: 16px;
+
+    color: #e2576c;
+    font-family: "Raleway Web", sans-serif;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    margin: 26px;
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  .Logo {
+    order: -1;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 1%;
+    margin: auto 0;
+  }
+  .Logo img {
+    max-width: 160px;
+    height: auto;
+  }
+
+  .card {
+    width: 62px;
+    flex-basis: 20%;
+    order: 3;
+
+    cursor: pointer;
+    flex: 0 1 50%;
+    text-align: right;
+  }
+
+  .navigation-panel {
+    flex-basis: 60%;
+    order: 2;
+    align-self: center;
+    flex: 1 0 auto;
+  }
+
+  .season {
+    font-size: 4rem;
+  }
+
+  .banner {
+    background-size: contain;
+  }
+
+  .afterbanner {
+    padding-top: 4%;
+    height: 18vh;
+  }
+
+  .galery {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  .men {
+    width: 50%;
+    height: 25vw;
+  }
+  .hat {
+    width: 25%;
+    height: 25vw;
+  }
+
+  .glasses {
+    width: 25%;
+    height: 25vw;
+  }
+  .sale {
+    width: 25%;
+    height: 25vw;
+  }
+  .bags {
+    width: 25%;
+    height: 25vw;
+  }
+  .womens {
+    width: 50%;
+    height: 25vw;
+  }
+
+  .after-product {
+    padding-top: 2%;
+  }
+  h3 {
+    color: #e2576c;
+    text-align: center;
+    display: block;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-size: 23px;
+  }
+
+  .item-tag {
+    font-family: "Playfair Display Web", serif;
+    line-height: 1;
+    color: #e2576c;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  #mainform {
+    display: flex;
+  }
+
+  .email-form {
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin: 2rem auto 0;
+    position: relative;
+    width: 67%;
+  }
+
+  input[type="email"] {
+    padding: 0.5rem 1.75rem;
+    padding-right: 150px;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    background-color: #e2574c;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Raleway Web", sans-serif;
+    font-weight: 300;
+    padding: 0.25rem 1.5rem;
+    position: absolute;
+    right: 0.25rem;
+    top: 0.25rem;
+  }
+
+  .flex-container {
+    height: 40%;
+    display: flex;
+    text-align: unset;
+  }
+  .social {
+    display: block;
+  }
+  .facebook {
+    display: contents;
+  }
+
+  .twitter {
+    display: contents;
+  }
+  .instagram {
+    display: contents;
+  }
+  .pinterest {
+    display: contents;
+  }
+
+  /* THIS IS THE WIDGET AREA */
+
+  @media screen and (min-width: 600px) {
+    .carousel-cell {
+      width: 25%;
+    }
+
+    .main-carousel {
+      margin-bottom: 100px;
+      padding-bottom: 75px;
+    }
+
+    .item-tag {
+      font-family: Playfair Display Web, serif;
+      line-height: 1;
+      color: #e2576c;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .Products-type {
+      font-weight: 300;
+    }
+
+    .price {
+      color: #969696;
+      font-weight: 300;
+    }
+
+    .flex-container {
+      padding: 58px;
+    }
+  }
+}

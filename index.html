@@ -20,13 +20,9 @@
    <!-- This is the flickity for Java -->
    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-
-   <link rel="stylesheet" href="css/reset.css">
-
-   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="build/css/all.min.css">
 
 
-   <link rel="stylesheet" href="css/alohaCsstrieda.css">
 
 </head>
 
@@ -36,19 +32,21 @@
    <header class=" header-container container">
 
       <div class="Logo">
+         <h1 class="screen-reader-text">Aloha Apparel Co.</h1>
          <img src="images\aloha-logo.svg " alt="Aloha">
       </div>
 
-      <div>
+      <div class="card">
+         <img class="card-image" src=" images\cart-icon.svg " alt="cart-icon">
+      </div>
+
+      <div class="main-navigation">
          <ul class="navigation-panel">
             <li><a class="nav" href="#about">About</a></li>
             <li><a class="nav" href="#shop">Shop</a></li>
             <li><a class="nav" href="#featured">Featured</a></li>
             <li><a class="nav" href="#updates">Updates</a></li>
          </ul>
-      </div>
-      <div class="card">
-         <img class="card-image" src=" images\cart-icon.svg " alt="cart-icon">
       </div>
 
 
@@ -83,7 +81,7 @@
    <section class="galery">
 
 
-      <div class="men products-img">
+      <div class="men products-img" title="mens section">
 
          <a>MEN'S</a>
 
@@ -128,7 +126,7 @@
 
          <div class="carousel-cell">
 
-            <img src="images/stretch-knit-dress.jpg">
+            <img src="images/stretch-knit-dress.jpg" alt="dress">
             <p class="Products-type">Dresses</p>
             <h3 class=item-tags>Strech Knit Dress</h3>
             <p class="price">$169</p>
@@ -213,16 +211,21 @@
 
             </div>
 
-            <div class="color-email">
+
+
+            <form id="mainform" class="email-form" method="post">
+
+               <input class="email-colum" type="email" placeholder=" Your email" id="contact">
 
 
 
-               <form id="mainform" class="email-form" method="post">
-                  <input class="email-colum" type="email" placeholder=" Your email" id="contact">
-                  <input class="submit" type="submit" value=" Subsribe" id="btn">
-               </form>
+               <input class="submit" type="submit" value=" Subsribe" id="btn">
 
-            </div>
+
+
+            </form>
+
+
          </div>
       </section>
 
@@ -303,8 +306,8 @@
       </div>
       </footer>
 
-      <script src="script.js"> </script>
-
+      <script src="/build/js/script.min.js"> </script>
+      <script src="tota11y.min.js"></script>
 
 
 </body>

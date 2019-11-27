@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     wrapAround: true,
     freeScroll: true
   });
-
   const emailForm = document.getElementById("mainform");
   const emailInput = document.getElementById("contact");
 
@@ -21,6 +20,5 @@ document.addEventListener("DOMContentLoaded", function() {
       alert("thank you for your e-mail");
     }
   });
-
   //all of our java code come here
 }); // and of doc ready
