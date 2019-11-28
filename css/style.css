@@ -184,6 +184,7 @@ a {
 }
 
 .products-img {
+  cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -571,6 +572,12 @@ input[type="submit"] {
     display: flex;
     text-align: unset;
   }
+  .social li a {
+    font-size: 24px;
+    display: flex;
+    /* flex-direction: column; */
+  }
+
   .social {
     display: block;
   }
