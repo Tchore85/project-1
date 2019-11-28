@@ -141,7 +141,7 @@ p {
   line-height: 2;
 }
 .flex-container p {
-  text-align: left;
+  text-align: center;
 }
 
 a {
@@ -375,7 +375,7 @@ input[type="submit"] {
   position: absolute;
   color: white;
   background-color: #e2574c;
-  font-family: Raleway Web, sans-serif;
+  font-family: "Raleway Web", sans-serif;
 }
 
 .post {
@@ -395,7 +395,6 @@ input[type="submit"] {
     ),
     url(../../images/wave-bkgd.jpg) no-repeat bottom;
 
-  /* background-image: url(../../images/wave-bkgd.jpg); */
   background-position: bottom;
   margin-left: auto;
   margin-right: auto;
@@ -405,7 +404,7 @@ input[type="submit"] {
 .email-colum {
   position: relative;
   width: 100%;
-  font-family: Raleway Web, sans-serif;
+  font-family: "Raleway Web", sans-serif;
 }
 
 .updates {
@@ -413,6 +412,25 @@ input[type="submit"] {
 }
 .sign-up {
   color: white;
+}
+
+p {
+  color: white;
+}
+.copyright p,
+.contact a,
+.adress {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact a {
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.adress p {
+  color: #969696;
 }
 
 .fotter-socialmedia li {
@@ -611,8 +629,8 @@ input[type="submit"] {
     padding: 4rem 0;
     display: flex;
   }
-  p {
-    color: white;
+  .flex-container p {
+    text-align: left;
   }
 
   .general-footer-text {
@@ -633,10 +651,10 @@ input[type="submit"] {
   .contact p {
     display: flex;
   }
-
-  .adress p {
-    color: #969696;
+  .adress {
+    display: unset;
   }
+
   .social li a {
     font-size: 1rem;
   }
