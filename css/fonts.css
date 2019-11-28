@@ -1,26 +1,25 @@
 @font-face {
   font-family: "Raleway";
-  src: url("../../fonts/fonttrieda/Raleway-Medium.eot");
-  src: url("../../fonts/fonttrieda/Raleway-Medium.eot?#iefix")
+  src: url("../fonttrieda/Raleway-Medium.eot");
+  src: url("../fonttrieda/Raleway-Medium.eot?#iefix")
       format("embedded-opentype"),
-    url("../../fonts/fonttrieda/Raleway-Medium.woff2") format("woff2"),
-    url("../../fonts/fonttrieda/Raleway-Medium.woff") format("woff"),
-    url("../../fonts/fonttrieda/Raleway-Medium.ttf") format("truetype"),
-    url("../../fonts/fonttrieda/Raleway-Medium.svg#Raleway-Medium")
-      format("svg");
+    url("../fonttrieda/Raleway-Medium.woff2") format("woff2"),
+    url("../fonttrieda/Raleway-Medium.woff") format("woff"),
+    url("../fonttrieda/Raleway-Medium.ttf") format("truetype"),
+    url("../fonttrieda/Raleway-Medium.svg#Raleway-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Raleway";
-  src: url("../../fonts/fonttrieda/Raleway-MediumItalic.eot");
-  src: url("../../fonts/fonttrieda/Raleway-MediumItalic.eot?#iefix")
+  src: url("../fonttrieda/Raleway-MediumItalic.eot");
+  src: url("../fonttrieda/Raleway-MediumItalic.eot?#iefix")
       format("embedded-opentype"),
-    url("../../fonts/fonttrieda/Raleway-MediumItalic.woff2") format("woff2"),
-    url("../../fonts/fonttrieda/Raleway-MediumItalic.woff") format("woff"),
-    url("../../fonts/fonttrieda/Raleway-MediumItalic.ttf") format("truetype"),
-    url("../../fonts/fonttrieda/Raleway-MediumItalic.svg#Raleway-MediumItalic")
+    url("../fonttrieda/Raleway-MediumItalic.woff2") format("woff2"),
+    url("../fonttrieda/Raleway-MediumItalic.woff") format("woff"),
+    url("../fonttrieda/Raleway-MediumItalic.ttf") format("truetype"),
+    url("../fonttrieda/Raleway-MediumItalic.svg#Raleway-MediumItalic")
       format("svg");
   font-weight: 500;
   font-style: italic;

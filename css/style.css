@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: "Releway";
+  font-family: "Playfair Display Web", serif;
 }
 .container {
   max-width: 1240px;
@@ -140,6 +140,9 @@ p {
   font-style: italic;
   line-height: 2;
 }
+.flex-container p {
+  text-align: left;
+}
 
 a {
   color: white;
@@ -153,13 +156,13 @@ a {
 
 .banner {
   padding: 200px 0px;
-  background-image: url(../../images/banner-girl.png),
-    url(../../images/flower-bkgd.jpg);
-
-  background-repeat: no-repeat, repeat;
-
-  background-position: center center;
-  background-size: contain;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../../images/banner-girl.png) no-repeat center 60px,
+    url(../../images/flower-bkgd.jpg) repeat-x top;
 }
 
 .collection {
@@ -181,6 +184,7 @@ a {
 
 .alohaapparel {
   font-size: 18px;
+  color: black;
 }
 
 .products-img {
@@ -201,38 +205,74 @@ a {
   width: 112%;
   height: 50vw;
 
-  background-image: url(../../images/mens-category.jpg);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../../images/mens-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
 }
 .hat {
   width: 112%;
   height: 50vw;
 
-  background-image: url(../../images/trends-category.jpg);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../../images/trends-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
 }
 
 .glasses {
   width: 112%;
   height: 50vw;
 
-  background-image: url(../../images/glasses-category.jpg);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../../images/glasses-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
 }
 .sale {
   width: 112%;
   height: 50vw;
 
-  background-image: url(../../images/sale-category.jpg);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../../images/sale-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
 }
 .bags {
   width: 112%;
   height: 50vw;
 
-  background-image: url(../../images/bags-category.jpg);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../../images/bags-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
 }
 .womens {
   width: 112%;
   height: 50vw;
 
-  background-image: url(../../images/womens-category.jpg);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../../images/womens-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
 }
 
 .afterbanner {
@@ -568,18 +608,42 @@ input[type="submit"] {
   }
 
   .flex-container {
-    height: 40%;
+    padding: 4rem 0;
     display: flex;
-    text-align: unset;
+  }
+  p {
+    color: white;
+  }
+
+  .general-footer-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    font-family: "Playfair Display Web", serif;
+  }
+
+  .copyright p {
+    font-family: "Playfair Display Web", serif;
+  }
+  .contact a {
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .contact p {
+    display: flex;
+  }
+
+  .adress p {
+    color: #969696;
   }
   .social li a {
-    font-size: 24px;
-    display: flex;
-    /* flex-direction: column; */
+    font-size: 1rem;
   }
 
   .social {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .facebook {
     display: contents;
@@ -622,10 +686,6 @@ input[type="submit"] {
     .price {
       color: #969696;
       font-weight: 300;
-    }
-
-    .flex-container {
-      padding: 58px;
     }
   }
 }
