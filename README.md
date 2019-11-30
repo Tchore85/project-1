@@ -1,10 +1,19 @@
-# Aloha Project 
+# Aloha My First Web site
 
-My first website project of a aloha clothing company
+<img src=".../../images/aloha-mike.png"  />
 
 ## Key Learnings
 
-HTML, CSS, JavaScript
+- HTML
+- CSS
+- JavaScript
 
+## Personal Learnings
 
-## Another Heading h2
+In this project, I have the opportunity to get in the first touch with technologies such as HTML, CSS, and JavaScript simultaneously to be able to apply them to the real project. The whole process brought me to the level, where I was able to understand the basics of Web development. Positive Experience!
+
+## Author:
+
+Michal Prokop
+Web developer student at Red Academy
+Vancouver, Canada, BC

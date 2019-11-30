@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  console.log("hello world");
+  // console.log("hello world");
 
   const elem = document.querySelector(".main-carousel");
   const flkty = new Flickity(elem, {
